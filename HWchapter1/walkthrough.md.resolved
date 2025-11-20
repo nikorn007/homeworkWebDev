@@ -1,0 +1,27 @@
+# Resume Website Walkthrough
+
+I have created your resume website in [hw01.html](file:///d:/WebDevIT/HWchapter1/hw01.html). It is a single-page responsive design containing all the requested information.
+
+## Features
+- **Responsive Design**: Looks good on both mobile and desktop.
+- **Thai Font Support**: Uses 'Kanit' font from Google Fonts.
+- **Sections**:
+    - **Header**: Name, ID, Faculty, University.
+    - **Profile**: Personal details.
+    - **Addresses**: Registered and Current addresses.
+    - **Education**: Timeline layout.
+    - **Interests**: Tag cloud style.
+
+## How to View
+1. Go to the folder `d:\WebDevIT\HWchapter1`.
+2. Double-click [hw01.html](file:///d:/WebDevIT/HWchapter1/hw01.html) to open it in your web browser.
+
+## How to Edit
+You can edit the content directly in [hw01.html](file:///d:/WebDevIT/HWchapter1/hw01.html). Look for the text inside the HTML tags.
+- **Image**: Replace the `<div class="profile-img">NP</div>` with an `<img>` tag if you have a photo file.
+- **Personal Info**: Replace the text like `(ระบุชื่อเล่น)` with your actual information.
+
+## Verification Results
+- **Structure**: HTML5 valid structure.
+- **Styling**: CSS is embedded in the `<head>` for easy portability.
+- **Content**: All requested fields are present.

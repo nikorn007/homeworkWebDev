@@ -1,0 +1,30 @@
+# Resume Website Implementation Plan
+
+I will create a modern, responsive resume website for Nikorn Pokudom.
+
+## Proposed Changes
+
+### WebDevIT/HWchapter1
+
+#### [MODIFY] [hw01.html](file:///d:/WebDevIT/HWchapter1/hw01.html)
+- Implement HTML5 structure.
+- Add `<style>` block for CSS.
+- Use Google Fonts (Kanit for Thai support).
+- Sections:
+    - **Header**: Name, ID, Faculty, University, Photo (placeholder).
+    - **Profile (ประวัติ)**: Personal details.
+    - **Address (ที่อยู่)**: Registered and Current.
+    - **Education (ประวัติการศึกษา)**: Timeline or list.
+    - **Interests (ความชอบ)**: Icons or list.
+- **Design**:
+    - Clean, modern aesthetic.
+    - Responsive layout (mobile-friendly).
+    - Hover effects and smooth transitions.
+
+## Verification Plan
+
+### Manual Verification
+- Open [hw01.html](file:///d:/WebDevIT/HWchapter1/hw01.html) in the browser.
+- Check for correct display of Thai characters.
+- Verify all personal information is correct.
+- Test responsiveness by resizing the window.

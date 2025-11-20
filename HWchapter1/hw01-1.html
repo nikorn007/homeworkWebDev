@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - นายนิกร โภคอุดม</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- การตั้งค่า CSS พื้นฐาน --- */
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* กล่องหลักของ Resume */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- ส่วนหัว (Header) --- */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 20px;
+        }
+
+        /* กรอบใส่รูปภาพ (Placeholder) */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+            border: 4px solid #0056b3;
+            overflow: hidden;
+            /* เพื่อให้รูปไม่ล้นกรอบ */
+        }
+
+        /* ถ้ามีรูปจริง ให้ใส่ tag img ไว้ข้างใน */
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 28px;
+        }
+
+        h2 {
+            margin: 5px 0 0;
+            color: #0056b3;
+            /* สีน้ำเงินโทนเทคโนโลยี */
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .student-id {
+            color: #777;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* --- หัวข้อของแต่ละส่วน --- */
+        h3 {
+            color: #0056b3;
+            border-left: 5px solid #ffc107;
+            /* แถบสีเหลืองด้านหน้า */
+            padding-left: 10px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        /* --- การจัดรูปแบบเนื้อหา --- */
+        .section-content {
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* ตกแต่งส่วนที่อยู่ให้ดูแยกกันชัดเจน */
+        .address-box {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+        }
+
+        .address-label {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* --- ความชอบ (Tags Style) --- */
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #e3f2fd;
+            color: #0056b3;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="profile-img">
+                <span>รูปถ่ายหน้าตรง</span>
+            </div>
+
+            <h1>นายนิกร โภคอุดม</h1>
+            <h2>คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยอีสเทิร์นเอเชีย</h2>
+            <div class="student-id">รหัสนักศึกษา: 67112007 (ชั้นปีที่ 1)</div>
+        </header>
+
+        <main>
+            <section>
+                <h3>ประวัติส่วนตัว</h3>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>ชื่อ-นามสกุล:</strong> นายนิกร โภคอุดม (Nikorn Phokudom)</li>
+                        <li><strong>วันเกิด:</strong> 20 มกราคม 2549 (ตัวอย่าง)</li>
+                        <li><strong>สัญชาติ:</strong> ไทย</li>
+                        <li><strong>เบอร์โทรศัพท์:</strong> 08x-xxx-xxxx (ระบุเบอร์จริงที่นี่)</li>
+                        <li><strong>อีเมล:</strong> nikorn.pho@sample.com</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>ข้อมูลการติดต่อและที่อยู่</h3>
+                <div class="section-content">
+                    <div class="address-box">
+                        <span class="address-label">🏠 ที่อยู่ตามทะเบียนบ้าน:</span>
+                        99/9 หมู่ 1 ตำบลรังสิต อำเภอธัญบุรี จังหวัดปทุมธานี 12110
+                    </div>
+                    <div class="address-box">
+                        <span class="address-label">📍 ที่อยู่ปัจจุบัน:</span>
+                        หอพักนักศึกษา มหาวิทยาลัยอีสเทิร์นเอเชีย 200 ถนนรังสิต-นครนายก ตำบลรังสิต อำเภอธัญบุรี
+                        จังหวัดปทุมธานี 12110
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>ประวัติการศึกษา</h3>
+                <div class="section-content">
+                    <ul>
+                        <li>
+                            <strong>2567 - ปัจจุบัน:</strong><br>
+                            ปริญญาตรี คณะเทคโนโลยีสารสนเทศ<br>
+                            <em>มหาวิทยาลัยอีสเทิร์นเอเชีย (เกรดเฉลี่ยสะสม: รอผลการเรียน)</em>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>2561 - 2566:</strong><br>
+                            มัธยมศึกษาตอนปลาย (สายวิทย์-คณิต หรือ ศิลป์-คำนวณ)<br>
+                            <em>โรงเรียนมัธยมศึกษา (ระบุชื่อโรงเรียนเดิม)</em>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>ความชอบและความสนใจ</h3>
+                <div class="section-content tag-container">
+                    <span class="tag">เขียนโปรแกรม (Coding)</span>
+                    <span class="tag">ออกแบบเว็บไซต์ (Web Design)</span>
+                    <span class="tag">เทคโนโลยี AI</span>
+                    <span class="tag">อ่านหนังสือไอที</span>
+                    <span class="tag">E-Sports</span>
+                    <span class="tag">การตัดต่อวิดีโอ</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2024 Nikorn Phokudom. All Rights Reserved.<br>
+            คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยอีสเทิร์นเอเชีย
+        </footer>
+    </div>
+
+</body>
+
+</html>

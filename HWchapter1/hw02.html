@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loy Krathong Festival - Thailand</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&family=Sarabun:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --deep-blue: #0a192f;
+            --warm-light: #ffaa00;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3,
+        .navbar-brand {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--deep-blue);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: var(--primary-gold) !important;
+        }
+
+        .nav-link:hover {
+            color: #fff !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Loy_Krathong.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            color: var(--primary-gold);
+        }
+
+        /* Content Sections */
+        .section-title {
+            color: var(--deep-blue);
+            border-bottom: 3px solid var(--primary-gold);
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Gallery */
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-img:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--deep-blue);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Loy Krathong</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Loy Krathong Festival</h1>
+            <p class="lead fs-3">The Festival of Lights</p>
+            <p class="fs-5">Paying respect to the Goddess of Water</p>
+        </div>
+    </header>
+
+    <!-- History & Significance -->
+    <section id="history" class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Loy_Krathong_2010_DSC07807e.jpg"
+                    alt="Floating Lanterns" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title">History & Significance</h2>
+                <p><strong>Loy Krathong</strong> is one of Thailand's most enchanting festivals, celebrated annually on
+                    the full moon of the 12th Thai lunar month (usually November).</p>
+                <p>The name translates to "to float a basket," and comes from the tradition of making <em>krathongs</em>
+                    or buoyant, decorated baskets, which are then floated on a river.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent"><i class="bi bi-water text-primary"></i>
+                        <strong>Gratitude:</strong> To thank the Goddess of Water, Phra Mae Khongkha, for the water used
+                        throughout the year.</li>
+                    <li class="list-group-item bg-transparent"><i class="bi bi-stars text-warning"></i>
+                        <strong>Forgiveness:</strong> To ask for forgiveness for polluting the rivers.</li>
+                    <li class="list-group-item bg-transparent"><i class="bi bi-brightness-high text-danger"></i>
+                        <strong>Letting Go:</strong> Floating the krathong symbolizes letting go of anger, hatred, and
+                        negative thoughts.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="bg-light py-5">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Festival Activities</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h4">Floating Krathongs</h3>
+                            <p class="card-text">People gather at rivers, lakes, and canals to release their krathongs.
+                                It is believed that if your candle stays lit until it disappears out of sight, your wish
+                                will come true.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h4">Yi Peng (Sky Lanterns)</h3>
+                            <p class="card-text">In Northern Thailand (Chiang Mai), the festival coincides with Yi Peng,
+                                where thousands of paper lanterns are released into the sky, creating a mesmerizing
+                                view.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h4">Beauty Contests</h3>
+                            <p class="card-text">The "Noppamas Queen" beauty pageants are held in honor of the legendary
+                                figure Nang Noppamas, who is said to have created the first krathong.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container my-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title">Photo Gallery</h2>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-4 col-sm-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Loy_Krathong.jpeg"
+                    alt="Loy Krathong Atmosphere" class="gallery-img">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Loy_Krathong_2010_DSC07807e.jpg"
+                    alt="Lanterns" class="gallery-img">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <!-- Using a generic placeholder for close up if specific one fails, but trying a reliable one -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Loy_Krathong_-_Programa_Oficial_-_Chiang_Mai.jpg/800px-Loy_Krathong_-_Programa_Oficial_-_Chiang_Mai.jpg"
+                    alt="Chiang Mai Celebration" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Loy Krathong Festival. Created for Web Development Class.</p>
+            <small class="text-muted">Images courtesy of Wikimedia Commons</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Nikorn Pokudom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --heading-color: #1e293b;
+            --accent-color: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            background-color: #e2e8f0;
+            /* Placeholder color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #94a3b8;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header-content p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .full-width {
+                grid-column: span 2;
+            }
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--heading-color);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            border-left: 2px solid var(--accent-color);
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #eff6ff;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .tag:hover {
+            background-color: #dbeafe;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Placeholder for image, user can replace src later -->
+            <div class="profile-img">NP</div>
+            <!-- <img src="profile.jpg" alt="Nikorn Pokudom" class="profile-img"> -->
+
+            <div class="header-content">
+                <h1>นายนิกร โภคอุดม</h1>
+                <p>รหัสนักศึกษา: 67112007</p>
+                <p>คณะเทคโนโลยีสารสนเทศ</p>
+                <div class="badge">มหาวิทยาลัยอีสเทิร์นเอเชีย</div>
+            </div>
+        </header>
+
+        <main>
+            <section class="full-width">
+                <h2>👤 ประวัติส่วนตัว</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div class="info-item">
+                        <span class="info-label">ชื่อ-นามสกุล</span>
+                        นายนิกร โภคอุดม
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">ชื่อเล่น</span>
+                        (ระบุชื่อเล่น)
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">วันเกิด</span>
+                        (ระบุวันเกิด)
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">สถานะ</span>
+                        นักศึกษาชั้นปีที่ 1
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>📍 ที่อยู่ตามทะเบียนบ้าน</h2>
+                <p>(ระบุรายละเอียดที่อยู่ตามทะเบียนบ้าน)</p>
+                <p>ตำบล... อำเภอ... จังหวัด... รหัสไปรษณีย์...</p>
+            </section>
+
+            <section>
+                <h2>🏠 ที่อยู่ปัจจุบัน</h2>
+                <p>(ระบุรายละเอียดที่อยู่ปัจจุบัน)</p>
+                <p>ตำบล... อำเภอ... จังหวัด... รหัสไปรษณีย์...</p>
+            </section>
+
+            <section class="full-width">
+                <h2>🎓 ประวัติการศึกษา</h2>
+                <div class="timeline-item">
+                    <span class="info-label" style="color: var(--primary-color);">ระดับอุดมศึกษา (ปัจจุบัน)</span>
+                    <p>คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยอีสเทิร์นเอเชีย</p>
+                    <small style="color: #64748b;">2567 - ปัจจุบัน</small>
+                </div>
+                <div class="timeline-item">
+                    <span class="info-label">ระดับมัธยมศึกษาตอนปลาย</span>
+                    <p>(ระบุชื่อโรงเรียน)</p>
+                    <small style="color: #64748b;">(ระบุปี พ.ศ.)</small>
+                </div>
+                <div class="timeline-item">
+                    <span class="info-label">ระดับมัธยมศึกษาตอนต้น</span>
+                    <p>(ระบุชื่อโรงเรียน)</p>
+                    <small style="color: #64748b;">(ระบุปี พ.ศ.)</small>
+                </div>
+            </section>
+
+            <section class="full-width">
+                <h2>⭐ ความชอบ / งานอดิเรก</h2>
+                <div class="tag-container">
+                    <span class="tag">💻 การเขียนโปรแกรม</span>
+                    <span class="tag">🎮 เล่นเกม</span>
+                    <span class="tag">📚 อ่านหนังสือ</span>
+                    <span class="tag">🎵 ฟังเพลง</span>
+                    <span class="tag">🏸 กีฬา</span>
+                    <span class="tag">📸 ถ่ายภาพ</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Nikorn Pokudom. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
